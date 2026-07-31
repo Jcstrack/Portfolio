@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Juan Carlos Ulloa, ingeniero en Informática y desarrollador Full Stack."
+    />
+    <title>Juan Carlos Ulloa | Portfolio</title>
+  </head>
+  <body
+    class="bg-gradient-to-bl from-slate-900 via-purple-950 to-black bg-no-repeat dark:from-slate-950 dark:via-slate-800 dark:to-black"
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      addEventListener('visibilitychange', function (event) {
+        document.title =
+          event.target.visibilityState === 'visible'
+            ? 'Juan Carlos Ulloa | Portfolio'
+            : '¡Te esperamos! ¡Vuelve pronto!'
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+{
+  "header": {
+    "navigation": {
+      "label": "Navegación principal",
+      "title": { "home": "Inicio", "about": "Sobre m\u00ed", "skills": "Habilidades", "experience": "Experiencia", "contact": "Contacto" },
+      "url": { "home": "/home", "about": "/about-me", "skills": "/skills", "experience": "/experience", "contact": "/contact" }
+    },
+    "home": {
+      "presentation": "Ingeniero en Inform\u00e1tica y desarrollador web con experiencia en Frontend, WordPress y soluciones Full Stack.",
+      "btnAbout": "Sobre m\u00ed",
+      "cubeAriaLabel": "Tecnolog\u00edas y \u00e1reas de trabajo"
+    },
+    "about": {
+      "title": "Acerca",
+      "titleAccent": "de m\u00ed",
+      "eyebrow": "Ingeniero en inform\u00e1tica - Full Stack",
+      "intro": "Soy desarrollador web especializado en Frontend, WordPress y soluciones Full Stack. Creo productos funcionales, rápidos y centrados en el usuario.",
+      "body": "También cuento con conocimientos de DevOps y Data Science, trabajando con Docker, Kubernetes, Python, TensorFlow y Power BI.",
+      "location": "Pe\u00f1alol\u00e9n, Santiago",
+      "availability": "Disponible para colaborar",
+      "imageAlt": "Ilustraci\u00f3n sobre colaboraci\u00f3n y desarrollo de productos",
+      "cardLabel": "Experiencias digitales",
+      "badge": "Ideas a productos",
+      "focus": {
+        "frontend": { "title": "Full Stack", "text": "Frontend, WordPress, APIs y bases de datos." },
+        "experience": { "title": "DevOps", "text": "Linux, Docker, Kubernetes, Git y despliegues." },
+        "learning": { "title": "Data Science", "text": "Python, TensorFlow, Power BI y visualización de datos." }
+      },
+      "first_p": "Mi traves\u00eda profesional est\u00e1 impulsada por la curiosidad, la adquisici\u00f3n constante de conocimientos y el deseo de dominar nuevas tecnolog\u00edas.",
+      "second_p": "Cada proyecto es una oportunidad para conectar una experiencia clara con una soluci\u00f3n mantenible, medible y \u00fatil para las personas que la utilizan."
+    },
+    "skills": {
+      "title": "Habilidades",
+      "eyebrow": "Perfil t\u00e9cnico",
+      "intro": "Tecnolog\u00edas y herramientas que utilizo para construir productos web, sitios corporativos y soluciones internas.",
+      "previous": "Habilidad anterior",
+      "next": "Siguiente habilidad",
+      "all": "Todas",
+      "filterLabel": "Filtrar habilidades por área",
+      "collectionLabel": "Skill inventory",
+      "collectionTitle": "Tecnologías que utilizo",
+      "skillsCount": "skills",
+      "coreLabel": "Mostrando habilidades",
+      "loading": "Cargando habilidades...",
+      "loadError": "No fue posible cargar las habilidades desde la API.",
+      "retry": "Reintentar",
+      "empty": "No hay habilidades para este filtro.",
+      "categories": { "frontend": "Frontend", "cms": "WordPress & CMS", "backend": "Backend & APIs", "cloud": "Cloud & DevOps", "data": "Datos & IA", "tools": "Herramientas", "workflow": "Productividad" },
+      "level_skill": { "bs": "B\u00e1sico", "in": "Intermedio", "av": "Avanzado" }
+    },
+    "experience": {
+      "title": "Experiencia",
+      "tagline": "Proyectos y trayectoria",
+      "intro": "Una selecci\u00f3n de proyectos profesionales, freelance y acad\u00e9micos donde he conectado producto, tecnolog\u00eda y necesidades reales.",
+      "skillsTitle": "Skills utilizadas",
+      "clinic": { "title": "Cl\u00ednica Cham\u00e1n - Sitio corporativo", "shortTitle": "Cl\u00ednica Cham\u00e1n", "date": "Febrero / Abril (2026)", "visual": "WORDPRESS - PHP", "skills": ["WordPress", "PHP", "JavaScript", "Dise\u00f1o responsive"], "description": "Dise\u00f1\u00e9 y desarroll\u00e9 el sitio institucional en WordPress con foco en conversi\u00f3n, experiencia de usuario y administraci\u00f3n simple. Tambi\u00e9n implement\u00e9 un plugin personalizado en PHP para pre-reservas por bloques, con panel de administraci\u00f3n, cupos, estados, notificaciones por correo y carga de comprobantes." },
+      "kunic": { "title": "KunicProduccionesSpa - E-commerce", "shortTitle": "KunicProduccionesSpa", "date": "Abril / Julio (2025)", "visual": "WOOCOMMERCE - SEO", "skills": ["WordPress", "Elementor", "WooCommerce", "SEO on-page", "LiteSpeed Cache", "FiboSearch"], "description": "Desarroll\u00e9 una plataforma web con WordPress, Elementor y WooCommerce. Integr\u00e9 ShopLentor, FiboSearch, LiteSpeed Cache e Image Optimizer para mejorar b\u00fasqueda, rendimiento, navegaci\u00f3n, SEO y conversi\u00f3n." },
+      "fitness": { "title": "Tu Evoluci\u00f3n Fitness - SPA", "shortTitle": "Tu Evoluci\u00f3n Fitness", "date": "Febrero / Marzo (2024)", "visual": "REACT - TAILWIND", "skills": ["React.js", "JavaScript", "Tailwind CSS", "Dise\u00f1o responsive"], "description": "Desarroll\u00e9 una Single Page Application para presentar los servicios de un gimnasio y fortalecer su presencia digital. La soluci\u00f3n fue construida con React.js y Tailwind CSS, priorizando responsive design, rapidez de carga y claridad para el usuario." },
+      "btg": { "title": "BTG Pactual - Gesti\u00f3n de riesgo", "shortTitle": "BTG Pactual", "date": "Mayo / Noviembre (2023)", "visual": "NEXT.JS - UI SYSTEMS", "skills": ["Next.js", "React.js", "TanStack Table", "Figma", "Storybook", "Tailwind CSS", "Git"], "description": "Contribu\u00ed al desarrollo frontend de una plataforma de gesti\u00f3n de riesgos financieros utilizando Next.js y React.js, incorporando funcionalidades avanzadas con TanStack Table. Particip\u00e9 en la adaptaci\u00f3n de la biblioteca de componentes interna del banco con Figma, Storybook, CSS puro y Tailwind CSS, adem\u00e1s de Git Enterprise y Git Gogs." },
+      "network": { "title": "Vidrier\u00eda Almagro - Red inal\u00e1mbrica", "shortTitle": "Vidrier\u00eda Almagro", "date": "Enero / Febrero (2023)", "visual": "NETWORKING - LINUX", "skills": ["Linux", "Networking", "Configuraci\u00f3n de equipos", "Soporte t\u00e9cnico"], "description": "Planifiqu\u00e9 e implement\u00e9 una red inal\u00e1mbrica para mejorar la conectividad y la comunicaci\u00f3n interna de la empresa. El trabajo incluy\u00f3 configuraci\u00f3n de equipos, optimizaci\u00f3n de cobertura, estabilidad de se\u00f1al y acceso a recursos digitales." },
+      "fireWarning": { "title": "Fire Warning - IA aplicada", "shortTitle": "Fire Warning", "date": "Noviembre (2022) - Noviembre (2023)", "visual": "PYTHON - TENSORFLOW", "skills": ["Python", "TensorFlow", "Django", "React.js", "Data Science", "Tiempo real"], "description": "Particip\u00e9 en un proyecto de detecci\u00f3n de incendios mediante inteligencia artificial. Utilizamos Python y TensorFlow para el modelo, junto con React.js y Django para la visualizaci\u00f3n de c\u00e1maras en tiempo real y la generaci\u00f3n de alertas. El proyecto fue destacado en el Demo Day de Duoc UC." }
+    },
+    "contact": {
+      "title": "Contacto",
+      "kicker": "Hablemos de tu proyecto",
+      "intro": "Cuéntame qué necesitas construir, mejorar o resolver. Te responderé con una propuesta clara.",
+      "email": "juanculloacampos@gmail.com",
+      "location": "Peñalolén, Santiago",
+      "response": "Respuesta habitual en 24 - 48 horas",
+      "form": {
+        "kicker": "Contacto directo",
+        "helper": "Completa los datos y conversemos.",
+        "section1": { "label": "Nombre", "input_place_holder": "Ingrese su nombre", "error": "Nombre obligatorio" },
+        "section2": { "label": "Tel\u00e9fono", "input_place_holder": "Ingrese su tel\u00e9fono ej: 977332255", "error": "Tel\u00e9fono no v\u00e1lido. Ingrese 9 d\u00edgitos" },
+        "section3": { "label": "Email", "input_place_holder": "Ingrese su email", "error": "Ingrese un email v\u00e1lido" },
+        "section4": { "label": "Consulta", "input_place_holder": "Escriba su consulta", "error": "Escriba su consulta" },
+        "btn_send": "Enviar",
+        "sending": "Enviando...",
+        "success": "Correo enviado exitosamente",
+        "failure": "No se pudo enviar el mensaje. Int\u00e9ntalo nuevamente.",
+        "configurationError": "El formulario no est\u00e1 configurado correctamente."
+      }
+    }
+  }
+}

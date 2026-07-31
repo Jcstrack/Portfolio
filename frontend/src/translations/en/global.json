@@ -1,0 +1,85 @@
+{
+  "header": {
+    "navigation": {
+      "label": "Main navigation",
+      "title": { "home": "Home", "about": "About Me", "skills": "Skills", "experience": "Experience", "contact": "Contact" },
+      "url": { "home": "/home", "about": "/about-me", "skills": "/skills", "experience": "/experience", "contact": "/contact" }
+    },
+    "home": {
+      "presentation": "Computer Engineer and web developer with experience in Frontend, WordPress, and Full Stack solutions.",
+      "btnAbout": "About Me",
+      "cubeAriaLabel": "Technologies and areas of work"
+    },
+    "about": {
+      "title": "About",
+      "titleAccent": "me",
+      "eyebrow": "Computer engineer - Full Stack",
+      "intro": "I am a web developer specializing in Frontend, WordPress, and Full Stack solutions. I create functional, fast, and user-focused products.",
+      "body": "I also have knowledge of DevOps and Data Science, working with Docker, Kubernetes, Python, TensorFlow, and Power BI.",
+      "location": "Pe\u00f1alol\u00e9n, Santiago",
+      "availability": "Open to collaborate",
+      "imageAlt": "Illustration about collaboration and product development",
+      "cardLabel": "Digital experiences",
+      "badge": "Ideas to products",
+      "focus": {
+        "frontend": { "title": "Full Stack", "text": "Frontend, WordPress, APIs, and databases." },
+        "experience": { "title": "DevOps", "text": "Linux, Docker, Kubernetes, Git, and deployments." },
+        "learning": { "title": "Data Science", "text": "Python, TensorFlow, Power BI, and data visualization." }
+      },
+      "first_p": "My professional journey is driven by curiosity, constant learning, and the desire to master new technologies.",
+      "second_p": "Each project is an opportunity to connect a clear experience with a maintainable, measurable, and useful solution."
+    },
+    "skills": {
+      "title": "Skills",
+      "eyebrow": "Technical profile",
+      "intro": "Technologies and tools I use to build web products, corporate sites, and internal solutions.",
+      "previous": "Previous skill",
+      "next": "Next skill",
+      "all": "All",
+      "filterLabel": "Filter skills by area",
+      "collectionLabel": "Skill inventory",
+      "collectionTitle": "Technologies I use",
+      "skillsCount": "skills",
+      "coreLabel": "Showing skills",
+      "loading": "Loading skills...",
+      "loadError": "The skills could not be loaded from the API.",
+      "retry": "Try again",
+      "empty": "There are no skills for this filter.",
+      "categories": { "frontend": "Frontend", "cms": "WordPress & CMS", "backend": "Backend & APIs", "cloud": "Cloud & DevOps", "data": "Data & AI", "tools": "Tools", "workflow": "Productivity" },
+      "level_skill": { "bs": "Basic", "in": "Intermediate", "av": "Advanced" }
+    },
+    "experience": {
+      "title": "Experience",
+      "tagline": "Projects and journey",
+      "intro": "A selection of professional, freelance, and academic projects where I connected product, technology, and real needs.",
+      "skillsTitle": "Skills used",
+      "clinic": { "title": "Cl\u00ednica Cham\u00e1n - Corporate website", "shortTitle": "Cl\u00ednica Cham\u00e1n", "date": "February / April (2026)", "visual": "WORDPRESS - PHP", "skills": ["WordPress", "PHP", "JavaScript", "Responsive design"], "description": "I designed and developed the institutional WordPress website with a focus on conversion, user experience, and simple administration. I also implemented a custom PHP plugin for block-based pre-bookings, with an administration panel, capacity and status management, email notifications, and proof uploads." },
+      "kunic": { "title": "KunicProduccionesSpa - E-commerce", "shortTitle": "KunicProduccionesSpa", "date": "April / July (2025)", "visual": "WOOCOMMERCE - SEO", "skills": ["WordPress", "Elementor", "WooCommerce", "On-page SEO", "LiteSpeed Cache", "FiboSearch"], "description": "I developed a web platform with WordPress, Elementor, and WooCommerce. I integrated ShopLentor, FiboSearch, LiteSpeed Cache, and Image Optimizer to improve search, performance, navigation, SEO, and conversion." },
+      "fitness": { "title": "Tu Evoluci\u00f3n Fitness - SPA", "shortTitle": "Tu Evoluci\u00f3n Fitness", "date": "February / March (2024)", "visual": "REACT - TAILWIND", "skills": ["React.js", "JavaScript", "Tailwind CSS", "Responsive design"], "description": "I developed a Single Page Application to present a gym's services and strengthen its digital presence. The solution was built with React.js and Tailwind CSS, prioritizing responsive design, fast loading, and clarity for the end user." },
+      "btg": { "title": "BTG Pactual - Risk management", "shortTitle": "BTG Pactual", "date": "May / November (2023)", "visual": "NEXT.JS - UI SYSTEMS", "skills": ["Next.js", "React.js", "TanStack Table", "Figma", "Storybook", "Tailwind CSS", "Git"], "description": "I contributed to the frontend development of a financial risk management platform using Next.js and React.js, adding advanced TanStack Table features. I participated in adapting the bank's internal component library with Figma, Storybook, vanilla CSS, and Tailwind CSS, along with Git Enterprise and Git Gogs." },
+      "network": { "title": "Vidrier\u00eda Almagro - Wireless network", "shortTitle": "Vidrier\u00eda Almagro", "date": "January / February (2023)", "visual": "NETWORKING - LINUX", "skills": ["Linux", "Networking", "Equipment configuration", "Technical support"], "description": "I planned and implemented a wireless network to improve the company's connectivity and internal communication. The work included equipment configuration, coverage optimization, signal stability, and access to digital resources." },
+      "fireWarning": { "title": "Fire Warning - Applied AI", "shortTitle": "Fire Warning", "date": "November (2022) - November (2023)", "visual": "PYTHON - TENSORFLOW", "skills": ["Python", "TensorFlow", "Django", "React.js", "Data Science", "Real time"], "description": "I participated in a fire detection project using artificial intelligence. We used Python and TensorFlow for the model, together with React.js and Django for real-time camera visualization and alert generation. The project was highlighted at Duoc UC Demo Day." }
+    },
+    "contact": {
+      "title": "Contact",
+      "kicker": "Let's talk about your project",
+      "intro": "Tell me what you need to build, improve, or solve. I will get back to you with a clear proposal.",
+      "email": "juanculloacampos@gmail.com",
+      "location": "Peñalolén, Santiago",
+      "response": "Typical response within 24 - 48 hours",
+      "form": {
+        "kicker": "Direct contact",
+        "helper": "Fill in the details and let's talk.",
+        "section1": { "label": "Name", "input_place_holder": "Enter your name", "error": "Name is required" },
+        "section2": { "label": "Phone", "input_place_holder": "Enter phone number e.g. 977332255", "error": "Invalid phone. Please enter 9 digits" },
+        "section3": { "label": "Email", "input_place_holder": "Enter email", "error": "Please enter a valid email address" },
+        "section4": { "label": "Inquiry", "input_place_holder": "Enter your inquiry", "error": "Please enter your inquiry" },
+        "btn_send": "Send",
+        "sending": "Sending...",
+        "success": "Email sent successfully",
+        "failure": "The message could not be sent. Please try again.",
+        "configurationError": "The form is not configured correctly."
+      }
+    }
+  }
+}

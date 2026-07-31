@@ -1,0 +1,80 @@
+name: portfolio
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    image: portfolio-api:local
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 3001
+      ALLOWED_ORIGINS: >-
+        http://localhost:${PORTFOLIO_PORT:-8080},
+        http://127.0.0.1:${PORTFOLIO_PORT:-8080},
+        http://localhost:5173,
+        http://127.0.0.1:5173
+    expose:
+      - "3001"
+    networks:
+      - portfolio
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3001/api/v1/health').then((response) => { if (!response.ok) process.exit(1) }).catch(() => process.exit(1))",
+        ]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: /api/v1
+    image: portfolio-frontend:local
+    expose:
+      - "80"
+    networks:
+      - portfolio
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1/healthz"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
+    restart: unless-stopped
+
+  proxy:
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
+    image: portfolio-proxy:local
+    depends_on:
+      api:
+        condition: service_healthy
+      frontend:
+        condition: service_healthy
+    ports:
+      - "${PORTFOLIO_PORT:-8080}:80"
+    networks:
+      - portfolio
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1/healthz"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
+    restart: unless-stopped
+
+networks:
+  portfolio:
+    name: portfolio
+    driver: bridge

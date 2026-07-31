@@ -1,0 +1,92 @@
+{
+  "es": {
+    "profile": {
+      "name": "Juan Carlos Ulloa Campos",
+      "title": "Ingeniero en Informática y desarrollador web",
+      "location": "Peñalolén, Santiago",
+      "availability": "Disponible para colaborar",
+      "email": "juanculloacampos@gmail.com",
+      "summary": "Desarrollador especializado en Frontend, WordPress y soluciones Full Stack, con conocimientos de DevOps y Data Science.",
+      "social": {
+        "github": "https://github.com/Jcstrack",
+        "linkedin": "https://www.linkedin.com/in/juan-carlos-ulloa-campos-34815a248/"
+      }
+    },
+    "sections": {
+      "home": {
+        "presentation": "Ingeniero en Informática y desarrollador web con experiencia en Frontend, WordPress y soluciones Full Stack.",
+        "cta": "Sobre mí"
+      },
+      "about": {
+        "eyebrow": "Ingeniero en informática - Full Stack",
+        "title": "Acerca de mí",
+        "intro": "Soy desarrollador web especializado en Frontend, WordPress y soluciones Full Stack. Creo productos funcionales, rápidos y centrados en el usuario.",
+        "body": "También cuento con conocimientos de DevOps y Data Science, trabajando con Docker, Kubernetes, Python, TensorFlow y Power BI."
+      },
+      "skills": {
+        "eyebrow": "Perfil técnico",
+        "title": "Habilidades",
+        "intro": "Tecnologías y herramientas que utilizo para construir productos web, sitios corporativos y soluciones internas."
+      },
+      "contact": {
+        "title": "Contacto",
+        "kicker": "Hablemos de tu proyecto",
+        "intro": "Cuéntame qué necesitas construir, mejorar o resolver. Te responderé con una propuesta clara."
+      }
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "cms": "WordPress & CMS",
+      "backend": "Backend & APIs",
+      "cloud": "Cloud & DevOps",
+      "data": "Datos & IA",
+      "tools": "Herramientas",
+      "workflow": "Productividad"
+    }
+  },
+  "en": {
+    "profile": {
+      "name": "Juan Carlos Ulloa Campos",
+      "title": "Computer Engineer and web developer",
+      "location": "Peñalolén, Santiago",
+      "availability": "Available to collaborate",
+      "email": "juanculloacampos@gmail.com",
+      "summary": "Developer specializing in Frontend, WordPress, and Full Stack solutions, with knowledge of DevOps and Data Science.",
+      "social": {
+        "github": "https://github.com/Jcstrack",
+        "linkedin": "https://www.linkedin.com/in/juan-carlos-ulloa-campos-34815a248/"
+      }
+    },
+    "sections": {
+      "home": {
+        "presentation": "Computer Engineer and web developer with experience in Frontend, WordPress, and Full Stack solutions.",
+        "cta": "About me"
+      },
+      "about": {
+        "eyebrow": "Computer engineer - Full Stack",
+        "title": "About me",
+        "intro": "I am a web developer specializing in Frontend, WordPress, and Full Stack solutions. I create functional, fast, and user-focused products.",
+        "body": "I also have knowledge of DevOps and Data Science, working with Docker, Kubernetes, Python, TensorFlow, and Power BI."
+      },
+      "skills": {
+        "eyebrow": "Technical profile",
+        "title": "Skills",
+        "intro": "Technologies and tools I use to build web products, corporate websites, and internal solutions."
+      },
+      "contact": {
+        "title": "Contact",
+        "kicker": "Let's talk about your project",
+        "intro": "Tell me what you need to build, improve, or solve. I will get back to you with a clear proposal."
+      }
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "cms": "WordPress & CMS",
+      "backend": "Backend & APIs",
+      "cloud": "Cloud & DevOps",
+      "data": "Data & AI",
+      "tools": "Tools",
+      "workflow": "Productivity"
+    }
+  }
+}

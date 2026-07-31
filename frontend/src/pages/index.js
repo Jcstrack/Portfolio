@@ -1,0 +1,5 @@
+export { HomePage } from './HomePage/HomePage'
+export { AboutPage } from './AboutPage/AboutPage'
+export { SkillsPage } from './SkillsPage/SkillsPage'
+export { ExperiencePage } from './ExperiencePage/ExperiencePage'
+export { ContactPage } from './ContactPage/ContactPage'
