@@ -17,6 +17,25 @@ Los tres servicios utilizan una red bridge de Docker llamada `portfolio`.
 Solamente `proxy` publica un puerto en el host. La API y el servidor estático no
 son accesibles directamente desde fuera de la red Docker.
 
+## Construcción multietapa
+
+Los tres Dockerfiles aplican **multi-stage build**. Las etapas temporales se
+descartan al finalizar y no forman parte de las imágenes que se ejecutan:
+
+- `frontend`: `dependencies` instala paquetes con caché de BuildKit, `build`
+  genera `dist` y `runtime` sirve únicamente esos archivos mediante Nginx.
+- `api`: `validation` ejecuta comprobaciones de sintaxis y las pruebas; `runtime`
+  recibe solamente `package.json`, `src` y `data`, sin copiar el directorio de
+  pruebas.
+- `proxy`: `validation` comprueba la configuración de Nginx con upstreams
+  temporales; `runtime` recibe la configuración original.
+
+Esta separación mantiene las herramientas de instalación, las pruebas y el
+código de construcción fuera de las imágenes finales. En el frontend produce
+la mayor reducción porque Node.js y `node_modules` no llegan al contenedor de
+producción. En API y proxy el beneficio principal es validar durante el build y
+controlar exactamente qué archivos entran en runtime.
+
 ## Estructura
 
 ```text
