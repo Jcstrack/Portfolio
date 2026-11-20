@@ -1,21 +1,19 @@
 import { useTranslation } from 'react-i18next'
 import { FiClock, FiMail, FiMapPin } from 'react-icons/fi'
-import { Toaster } from 'react-hot-toast'
-import { Form } from '../../components/Form/Form'
+import { DirectContact } from '../../components/DirectContact/DirectContact'
 
 export const ContactPage = () => {
   const [t] = useTranslation('global')
 
   return (
-    <>
-      <section className='portfolio-page portfolio-page--contact relative z-0 w-full max-w-[48rem] shrink-0 overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/50 shadow-2xl shadow-purple-950/20 backdrop-blur-md dark:border-pink-100/10'>
+    <section className='portfolio-page portfolio-page--contact relative z-0 w-full max-w-[48rem] shrink-0 overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/85 shadow-2xl shadow-purple-950/20 dark:border-pink-100/10'>
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full bg-fuchsia-600/20 blur-3xl'
+        className='ambient-orb ambient-orb--fuchsia pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full'
       />
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute -bottom-40 -left-24 h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl'
+        className='ambient-orb ambient-orb--indigo pointer-events-none absolute -bottom-40 -left-24 h-96 w-96 rounded-full'
       />
 
       <div className='portfolio-page-content contact-content relative z-[1] p-5 sm:p-7 lg:p-8'>
@@ -32,7 +30,7 @@ export const ContactPage = () => {
           </span>
         </div>
 
-        <div className='contact-panel relative mt-6 grid items-stretch gap-4 rounded-2xl border border-white/10 bg-black/10 p-3 animate-fadeInBT sm:p-4 lg:grid-cols-[.8fr_1.2fr] dark:border-pink-100/10'>
+        <div className='contact-panel relative mt-6 grid items-stretch gap-4 rounded-2xl border border-white/10 bg-black/10 p-3 animate-fadeInBT sm:p-4 lg:grid-cols-[.85fr_1.15fr] dark:border-pink-100/10'>
           <aside className='contact-aside flex flex-col justify-between rounded-2xl border border-fuchsia-300/15 bg-gradient-to-br from-fuchsia-500/10 via-slate-950/20 to-indigo-500/10 p-4'>
             <div>
               <span className='font-[monospace] text-[10px] uppercase tracking-[.22em] text-fuchsia-300'>
@@ -62,11 +60,9 @@ export const ContactPage = () => {
             </div>
           </aside>
 
-          <Form />
+          <DirectContact />
         </div>
       </div>
-      </section>
-      <Toaster />
-    </>
+    </section>
   )
 }

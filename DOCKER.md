@@ -67,9 +67,9 @@ docker compose up --build
 
 Direcciones públicas:
 
-- Portfolio: <http://localhost:8080>
-- API mediante proxy: <http://localhost:8080/api/v1>
-- Health general: <http://localhost:8080/healthz>
+- Portfolio: <http://localhost:8090>
+- API mediante proxy: <http://localhost:8090/api/v1>
+- Health general: <http://localhost:8090/healthz>
 
 ## Ejecutar en segundo plano
 
@@ -97,7 +97,7 @@ docker network rm portfolio
 Copia `.env.example` como `.env` en esta carpeta:
 
 ```env
-PORTFOLIO_PORT=8080
+PORTFOLIO_PORT=8090
 ```
 
 Después cambia el valor y vuelve a ejecutar `docker compose up`.

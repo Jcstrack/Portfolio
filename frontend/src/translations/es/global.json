@@ -67,18 +67,22 @@
       "email": "juanculloacampos@gmail.com",
       "location": "Peñalolén, Santiago",
       "response": "Respuesta habitual en 24 - 48 horas",
-      "form": {
+      "whatsapp": {
+        "label": "Conversar por WhatsApp",
+        "message": "Hola Juan Carlos, tengo una consulta sobre tus servicios."
+      },
+      "direct": {
         "kicker": "Contacto directo",
-        "helper": "Completa los datos y conversemos.",
-        "section1": { "label": "Nombre", "input_place_holder": "Ingrese su nombre", "error": "Nombre obligatorio" },
-        "section2": { "label": "Tel\u00e9fono", "input_place_holder": "Ingrese su tel\u00e9fono ej: 977332255", "error": "Tel\u00e9fono no v\u00e1lido. Ingrese 9 d\u00edgitos" },
-        "section3": { "label": "Email", "input_place_holder": "Ingrese su email", "error": "Ingrese un email v\u00e1lido" },
-        "section4": { "label": "Consulta", "input_place_holder": "Escriba su consulta", "error": "Escriba su consulta" },
-        "btn_send": "Enviar",
-        "sending": "Enviando...",
-        "success": "Correo enviado exitosamente",
-        "failure": "No se pudo enviar el mensaje. Int\u00e9ntalo nuevamente.",
-        "configurationError": "El formulario no est\u00e1 configurado correctamente."
+        "title": "Elige el canal que prefieras",
+        "intro": "Escríbeme directamente. No necesitas completar un formulario ni esperar una confirmación automática.",
+        "whatsapp": "Consultar por WhatsApp",
+        "whatsappValue": "Respuesta directa por mensaje",
+        "email": "Enviar un correo",
+        "emailSubject": "Consulta desde el portfolio",
+        "phone": "Llamar por teléfono",
+        "phoneValue": "+56 9 9484 0087",
+        "linkedin": "Contactar por LinkedIn",
+        "linkedinValue": "Perfil profesional"
       }
     }
   }

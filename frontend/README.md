@@ -54,28 +54,44 @@ generan scripts modernos y un bundle alternativo con polyfills para:
 - Safari e iOS 12 o posterior.
 
 Internet Explorer 11 no está soportado. Los estilos incluyen fallbacks para
-`dvh`, `backdrop-filter`, preferencias de movimiento reducido y unidades de
-viewport antiguas.
+`dvh`, preferencias de movimiento reducido y unidades de viewport antiguas.
 
 ## Rendimiento
 
 - Cada página se carga bajo demanda mediante `React.lazy`.
-- EmailJS y el formulario solo se descargan al entrar en Contacto.
+- Los enlaces precargan su página al recibir foco, hover o interacción táctil.
+- La página de contacto utiliza enlaces nativos y no descarga librerías de
+  formularios ni servicios de correo externos.
+- La lista de habilidades se conserva cinco minutos en memoria para evitar
+  solicitudes y estados de carga repetidos durante la navegación.
 - Las imágenes del timeline utilizan carga diferida.
 - El Service Worker conserva el shell y los assets visitados para navegación
   con conectividad limitada.
+- Los assets con hash reciben caché inmutable de un año desde Nginx.
+- Las animaciones usan transformaciones y opacidad, sin desenfoques grandes
+  que obliguen a repintar la interfaz en cada fotograma.
 - Las ilustraciones de About son locales y no dependen de servidores externos.
 
 ## Variables de entorno
 
 ```env
 VITE_API_URL=/api/v1
-VITE_SERVICE_ID=
-VITE_TEMPLATE_ID=
-VITE_PUBLIC_KEY=
+VITE_WHATSAPP_NUMBER=
 ```
 
-Las tres variables de EmailJS son necesarias para enviar el formulario.
+`VITE_WHATSAPP_NUMBER` debe contener el número internacional solo con dígitos,
+por ejemplo `56912345678`. Al ser el destino de un enlace público, el número
+queda visible en el bundle del navegador aunque el archivo `.env` esté ignorado.
+
+La página ofrece enlaces directos a WhatsApp, correo, teléfono y LinkedIn, sin
+depender de EmailJS. Docker monta `frontend/.env` como secreto únicamente
+durante el build. Cuando cambies una variable, fuerza la reconstrucción para
+evitar reutilizar una capa anterior:
+
+```bash
+docker compose build --no-cache frontend
+docker compose up -d --no-deps --force-recreate frontend proxy
+```
 
 ## Estructura
 
@@ -104,5 +120,5 @@ docker compose up --build
 ```
 
 El frontend queda disponible a través del proxy en
-`http://localhost:8080`. Nginx resuelve todas las rutas de React hacia
+`http://localhost:8090`. Nginx resuelve todas las rutas de React hacia
 `index.html`.

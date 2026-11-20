@@ -67,18 +67,22 @@
       "email": "juanculloacampos@gmail.com",
       "location": "Peñalolén, Santiago",
       "response": "Typical response within 24 - 48 hours",
-      "form": {
+      "whatsapp": {
+        "label": "Chat on WhatsApp",
+        "message": "Hi Juan Carlos, I have a question about your services."
+      },
+      "direct": {
         "kicker": "Direct contact",
-        "helper": "Fill in the details and let's talk.",
-        "section1": { "label": "Name", "input_place_holder": "Enter your name", "error": "Name is required" },
-        "section2": { "label": "Phone", "input_place_holder": "Enter phone number e.g. 977332255", "error": "Invalid phone. Please enter 9 digits" },
-        "section3": { "label": "Email", "input_place_holder": "Enter email", "error": "Please enter a valid email address" },
-        "section4": { "label": "Inquiry", "input_place_holder": "Enter your inquiry", "error": "Please enter your inquiry" },
-        "btn_send": "Send",
-        "sending": "Sending...",
-        "success": "Email sent successfully",
-        "failure": "The message could not be sent. Please try again.",
-        "configurationError": "The form is not configured correctly."
+        "title": "Choose your preferred channel",
+        "intro": "Contact me directly. There is no form to complete or automated confirmation to wait for.",
+        "whatsapp": "Ask on WhatsApp",
+        "whatsappValue": "Direct reply by message",
+        "email": "Send an email",
+        "emailSubject": "Portfolio inquiry",
+        "phone": "Call by phone",
+        "phoneValue": "+56 9 9484 0087",
+        "linkedin": "Contact me on LinkedIn",
+        "linkedinValue": "Professional profile"
       }
     }
   }

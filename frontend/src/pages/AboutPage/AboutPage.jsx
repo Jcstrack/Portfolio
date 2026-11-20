@@ -29,14 +29,14 @@ export const AboutPage = () => {
   ]
 
   return (
-    <section className='portfolio-page portfolio-page--about relative z-0 w-full max-w-[52rem] shrink-0 overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/50 shadow-2xl shadow-purple-950/20 backdrop-blur-md dark:border-pink-100/10'>
+    <section className='portfolio-page portfolio-page--about relative z-0 w-full max-w-[52rem] shrink-0 overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/85 shadow-2xl shadow-purple-950/20 dark:border-pink-100/10'>
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full bg-fuchsia-600/20 blur-3xl'
+        className='ambient-orb ambient-orb--fuchsia pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full'
       />
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute -bottom-40 -left-24 h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl'
+        className='ambient-orb ambient-orb--indigo pointer-events-none absolute -bottom-40 -left-24 h-96 w-96 rounded-full'
       />
 
       <div className='portfolio-page-content about-main relative z-[1] grid gap-10 p-6 sm:p-8 lg:grid-cols-[1.08fr_.92fr] lg:gap-12 lg:p-12'>
@@ -73,7 +73,7 @@ export const AboutPage = () => {
         <div className='about-visual relative flex min-h-[22rem] items-center justify-center animate-fadeInRL lg:min-h-0'>
           <div className='absolute right-2 top-0 h-40 w-40 rounded-full border border-fuchsia-300/20 sm:right-8 sm:h-52 sm:w-52' />
           <div className='absolute bottom-2 left-3 h-24 w-24 rounded-full border border-violet-300/20 sm:left-8' />
-          <div className='relative z-[1] w-[78%] max-w-[18rem] rotate-3 rounded-2xl border border-white/20 bg-white/10 p-3 shadow-2xl shadow-fuchsia-950/50 backdrop-blur-sm transition-transform duration-500 hover:rotate-0'>
+          <div className='relative z-[1] w-[78%] max-w-[18rem] rotate-3 rounded-2xl border border-white/20 bg-slate-800/90 p-3 shadow-2xl shadow-fuchsia-950/50 transition-transform duration-300 hover:rotate-0'>
             <div
               role='img'
               aria-label={t('header.about.imageAlt')}
@@ -105,7 +105,7 @@ export const AboutPage = () => {
               <FiArrowUpRight className='text-fuchsia-300' />
             </div>
           </div>
-          <div className='absolute bottom-5 left-0 z-[2] w-36 -rotate-6 rounded-xl border border-white/15 bg-slate-900/90 p-2 shadow-xl backdrop-blur-md transition-transform duration-500 hover:rotate-0 sm:bottom-8 sm:left-4'>
+          <div className='absolute bottom-5 left-0 z-[2] w-36 -rotate-6 rounded-xl border border-white/15 bg-slate-900 p-2 shadow-xl transition-transform duration-300 hover:rotate-0 sm:bottom-8 sm:left-4'>
             <div
               aria-hidden='true'
               className='flex h-24 w-full items-center justify-center rounded-lg bg-gradient-to-br from-violet-500/15 to-fuchsia-500/10 text-4xl text-violet-300'

@@ -26,7 +26,7 @@ export const ButtonTranslate = () => {
         onClick={() => handleChangeLanguage('es')}
         aria-pressed={i18n.language === 'es'}
         aria-label='Español'
-        className={`${i18n.language !== 'es' ? 'scale-90 opacity-70' : ''} flex h-7 w-7 cursor-pointer items-center justify-center rounded-full text-xl transition-all duration-300 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-fuchsia-300`}
+        className={`${i18n.language !== 'es' ? 'scale-90 opacity-70' : ''} flex h-7 w-7 cursor-pointer items-center justify-center rounded-full text-xl transition-[transform,opacity] duration-200 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-fuchsia-300`}
       >
         <span
           className='language-flag language-flag--es'
@@ -39,7 +39,7 @@ export const ButtonTranslate = () => {
         onClick={() => handleChangeLanguage('en')}
         aria-pressed={i18n.language === 'en'}
         aria-label='English'
-        className={`${i18n.language !== 'en' ? 'scale-90 opacity-70' : ''} flex h-7 w-7 cursor-pointer items-center justify-center rounded-full text-xl transition-all duration-300 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-fuchsia-300`}
+        className={`${i18n.language !== 'en' ? 'scale-90 opacity-70' : ''} flex h-7 w-7 cursor-pointer items-center justify-center rounded-full text-xl transition-[transform,opacity] duration-200 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-fuchsia-300`}
       >
         <span
           className='language-flag language-flag--us'

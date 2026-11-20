@@ -17,6 +17,7 @@
   margin: auto;
   perspective: 900px;
   perspective-origin: 50% 35%;
+  isolation: isolate;
 }
 
 :global(.dark) .container {
@@ -47,7 +48,9 @@
   width: var(--cube-size);
   height: var(--cube-size);
   transform-style: preserve-3d;
-  animation: giro 14s infinite linear;
+  animation: giro 16s infinite linear;
+  backface-visibility: hidden;
+  transform: translateZ(0);
   will-change: transform;
 }
 
@@ -66,7 +69,7 @@
   color: var(--cube-text);
   font-family: monospace;
   text-align: center;
-  backface-visibility: visible;
+  backface-visibility: hidden;
   transition:
     background 0.45s ease,
     border-color 0.45s ease,
@@ -106,10 +109,7 @@
   height: clamp(2.6rem, 6vw, 4rem);
   margin-bottom: 0.35rem;
   color: var(--cube-icon);
-  filter: drop-shadow(0 0 0.7rem var(--cube-icon-shadow));
-  transition:
-    color 0.45s ease,
-    filter 0.45s ease;
+  transition: color 0.25s ease;
 }
 
 .front {
@@ -141,10 +141,10 @@
   width: 90%;
   height: 90%;
   border-radius: 1.5rem;
-  background: var(--cube-shadow);
-  filter: blur(1.5rem);
+  background: radial-gradient(circle, var(--cube-shadow) 0%, transparent 72%);
+  opacity: .7;
   transform: translateY(var(--cube-half)) rotateX(90deg) translateZ(-4.2rem);
-  transition: background 0.45s ease;
+  transition: background 0.25s ease;
 }
 
 @keyframes giro {
@@ -160,5 +160,16 @@
 @media (max-width: 640px) {
   .container {
     --cube-size: 10.5rem;
+  }
+
+  .cube {
+    animation-duration: 18s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cube {
+    animation: none;
+    transform: rotateX(-10deg) rotateY(24deg);
   }
 }

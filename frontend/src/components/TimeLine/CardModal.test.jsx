@@ -25,9 +25,11 @@ describe('Experience dialog', () => {
   it('exposes dialog semantics and its skills', () => {
     render(<CardModal {...modalProps} />)
 
-    expect(
-      screen.getByRole('dialog', { name: 'Proyecto de prueba' })
-    ).toBeInTheDocument()
+    const dialog = screen.getByRole('dialog', { name: 'Proyecto de prueba' })
+
+    expect(dialog).toBeInTheDocument()
+    expect(dialog).toHaveClass('modal-backdrop')
+    expect(dialog.querySelector('.modal-surface')).toBeInTheDocument()
     expect(screen.getByText('React.js')).toBeInTheDocument()
     expect(screen.getByText('Node.js')).toBeInTheDocument()
   })

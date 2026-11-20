@@ -5,24 +5,18 @@ export default {
   theme: {
     extend: {
       animation: {
-        fadeInRL: 'fadeInRL .65s ease-out ',
-        fadeInLR: 'fadeInLR .65s ease-out ',
-        fadeInBT: 'fadeInBT .65s ease-out ',
-        fadeInBTFormLg: 'fadeInBTFormLg .65s ease-out forwards',
-        fadeInBTNav: 'fadeInBTNav .65s ease-out ',
+        fadeInRL: 'fadeInRL .42s ease-out ',
+        fadeInLR: 'fadeInLR .42s ease-out ',
+        fadeInBT: 'fadeInBT .42s ease-out ',
+        fadeInBTFormLg: 'fadeInBTFormLg .42s ease-out forwards',
+        fadeInBTNav: 'fadeInBTNav .42s ease-out ',
         typewriter:
-          'typewriter 3s steps(18), effect .5s step-end infinite alternate',
+          'typewriter 1.8s steps(18), effect .6s step-end infinite alternate',
         fadeInLRCard: 'fadeInLR .5s ease-out .4s forwards',
         fadeInRLCard: 'fadeInRL .5s ease-out 1s forwards',
         fadeInLRLastCard: 'fadeInLR .5s ease-out 1.6s forwards',
-        growth: 'growth .8s linear forwards',
-        opacity: 'opacity .8s linear forwards',
-        opacityModal: 'opacity .3s ease-out forwards',
-        opacityClosed: 'opacityClosed .3s ease-out forwards',
-        scaleOpen: 'scaleOpen .3s ease-out forwards',
-        scaleClosed: 'scaleClosed .3s ease-out forwards',
-        scaleOpenLg: 'scaleOpenLg .3s ease-out forwards',
-        scaleClosedLg: 'scaleClosedLg .3s ease-out forwards',
+        growth: 'growth .45s ease-out forwards',
+        opacity: 'opacity .45s ease-out forwards',
         growthFirstBranch: 'growthBranch .3s linear .1s forwards',
         growthSecondBranch: 'growthBranch .3s linear .5s forwards',
         growthThirdBranch: 'growthBranch .3s linear .9s forwards',
@@ -78,48 +72,6 @@ export default {
           },
           to: {
             opacity: '1',
-          },
-        },
-        opacityClosed: {
-          from: {
-            opacity: '1',
-            display: 'flex',
-          },
-          to: {
-            opacity: '0',
-            display: 'none',
-          },
-        },
-        scaleOpen: {
-          from: {
-            transform: 'scale(0)',
-          },
-          to: {
-            transform: 'scale(1)',
-          },
-        },
-        scaleClosed: {
-          from: {
-            transform: 'scale(1)',
-          },
-          to: {
-            transform: 'scale(0)',
-          },
-        },
-        scaleOpenLg: {
-          from: {
-            transform: 'scale(0)',
-          },
-          to: {
-            transform: 'scale(.9)',
-          },
-        },
-        scaleClosedLg: {
-          from: {
-            transform: 'scale(.9)',
-          },
-          to: {
-            transform: 'scale(0)',
           },
         },
       },

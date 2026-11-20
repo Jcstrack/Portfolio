@@ -31,7 +31,10 @@ ARG VITE_API_URL=/api/v1
 ENV VITE_API_URL=${VITE_API_URL}
 
 # Genera los archivos estáticos de producción en /app/dist.
-RUN npm run build
+# El archivo .env se monta como secreto solo durante este paso y no se copia
+# a la imagen final. Vite incorpora sus variables VITE_* en el bundle.
+RUN --mount=type=secret,id=frontend_env,target=/app/.env,required=true \
+    npm run build
 
 
 # Etapa 3: ejecuta la aplicación usando Nginx.

@@ -18,12 +18,12 @@ export const HeaderPage = () => {
     },
   ]
   return (
-    <header className='fixed left-0 right-2 top-0 z-10 flex h-[6.4rem] items-center justify-center bg-slate-950/5 px-5 backdrop-blur-sm transition-all duration-[.3s] ease-in sm:px-9 max-lg:h-20'>
+    <header className='site-header fixed left-0 right-0 top-0 z-10 flex h-[6.4rem] items-center justify-center px-5 sm:px-9 max-lg:h-20'>
       <nav
         aria-label='Enlaces principales y preferencias'
-        className='flex w-full max-w-[54rem] items-center justify-between gap-5'
+        className='site-header__content flex w-full max-w-[54rem] items-center justify-between gap-5'
       >
-        <h1 className='shrink-0 text-3xl font-semibold text-white transition-all duration-[.3s] ease-in sm:text-[2.5rem]'>
+        <h1 className='shrink-0 text-3xl font-semibold text-white transition-colors duration-200 ease-out sm:text-[2.5rem]'>
           <Link to='/'>
             JUDEV<span className='text-pink-400 dark:text-pink-500'>u.</span>
           </Link>
@@ -31,7 +31,7 @@ export const HeaderPage = () => {
         <ul className='flex items-center gap-x-3.5 sm:gap-x-5'>
           {objRed.map(({ ico, url, site }, index) => (
             <li
-              className={`${site === 'github' ? 'hover:text-yellow-500' : ''} ${site === 'linkedin' ? 'hover:text-blue-500' : ''} h-max w-max scale-[1.35] p-1 text-pink-100 duration-[.4s] ease-in-out hover:-translate-y-1 sm:scale-150`}
+              className={`${site === 'github' ? 'hover:text-yellow-500' : ''} ${site === 'linkedin' ? 'hover:text-blue-500' : ''} h-max w-max scale-[1.35] p-1 text-pink-100 transition-[transform,color] duration-200 ease-out hover:-translate-y-1 sm:scale-150`}
               key={index}
             >
               <a

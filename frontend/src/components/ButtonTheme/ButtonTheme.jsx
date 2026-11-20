@@ -46,7 +46,7 @@ export const ButtonTheme = () => {
       onClick={handleChangeTheme}
       aria-label={theme === 'dark' ? 'Activar modo claro' : 'Activar modo oscuro'}
       title={theme === 'dark' ? 'Activar modo claro' : 'Activar modo oscuro'}
-      className='relative z-[1] scale-[1.35] rounded-xl p-1 text-yellow-500 transition-transform duration-700 ease-in hover:text-yellow-600 dark:rotate-[360deg] dark:text-purple-300 dark:hover:text-purple-400 sm:scale-150'
+      className='relative z-[1] scale-[1.35] rounded-xl p-1 text-yellow-500 transition-[transform,color] duration-200 ease-out hover:text-yellow-600 dark:rotate-[360deg] dark:text-purple-300 dark:hover:text-purple-400 sm:scale-150'
     >
       {theme === 'dark' ? <IoMoonSharp /> : <IoSunny />}
     </button>
