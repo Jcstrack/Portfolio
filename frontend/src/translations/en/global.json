@@ -1,5 +1,14 @@
 {
   "header": {
+    "ui": {
+      "primaryLinks": "Primary links and preferences",
+      "activateLightMode": "Activate light mode",
+      "activateDarkMode": "Activate dark mode",
+      "languageSelector": "Select language",
+      "spanish": "Spanish",
+      "english": "English",
+      "closeDialog": "Close dialog"
+    },
     "navigation": {
       "label": "Main navigation",
       "title": { "home": "Home", "about": "About Me", "skills": "Skills", "experience": "Experience", "contact": "Contact" },
@@ -8,7 +17,15 @@
     "home": {
       "presentation": "Computer Engineer and web developer with experience in Frontend, WordPress, and Full Stack solutions.",
       "btnAbout": "About Me",
-      "cubeAriaLabel": "Technologies and areas of work"
+      "cubeAriaLabel": "Technologies and areas of work",
+      "cube": {
+        "frontend": "Frontend",
+        "cmsWeb": "CMS and web",
+        "backendApis": "Backend and APIs",
+        "dataScience": "Data science",
+        "devops": "DevOps",
+        "aiData": "AI and data"
+      }
     },
     "about": {
       "title": "About",
@@ -25,6 +42,12 @@
         "frontend": { "title": "Full Stack", "text": "Frontend, WordPress, APIs, and databases." },
         "experience": { "title": "DevOps", "text": "Linux, Docker, Kubernetes, Git, and deployments." },
         "learning": { "title": "Data Science", "text": "Python, TensorFlow, Power BI, and data visualization." }
+      },
+      "visual": {
+        "label": "Product systems",
+        "web": "Web",
+        "cloud": "Cloud",
+        "data": "Data"
       },
       "first_p": "My professional journey is driven by curiosity, constant learning, and the desire to master new technologies.",
       "second_p": "Each project is an opportunity to connect a clear experience with a maintainable, measurable, and useful solution."
@@ -62,6 +85,7 @@
     },
     "contact": {
       "title": "Contact",
+      "tagline": "Let's talk",
       "kicker": "Let's talk about your project",
       "intro": "Tell me what you need to build, improve, or solve. I will get back to you with a clear proposal.",
       "email": "juanculloacampos@gmail.com",

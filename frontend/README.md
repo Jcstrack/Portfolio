@@ -106,10 +106,13 @@ frontend/
 │   ├── services/
 │   ├── test/
 │   └── translations/
-├── Dockerfile
+├── nginx.conf
 ├── package.json
 └── vite.config.js
 ```
+
+El Dockerfile del frontend está centralizado en
+`../docker/frontend/Dockerfile` junto con su archivo de exclusiones de build.
 
 ## Docker
 

@@ -3,8 +3,10 @@ import { FaGithub } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { ButtonTheme } from '../ButtonTheme/ButtonTheme'
 import { ButtonTranslate } from '../ButtonTranslate/ButtonTranslate'
+import { useTranslation } from 'react-i18next'
 
 export const HeaderPage = () => {
+  const [t] = useTranslation('global')
   const objRed = [
     {
       ico: <IoLogoLinkedin />,
@@ -20,7 +22,7 @@ export const HeaderPage = () => {
   return (
     <header className='site-header fixed left-0 right-0 top-0 z-10 flex h-[6.4rem] items-center justify-center px-5 sm:px-9 max-lg:h-20'>
       <nav
-        aria-label='Enlaces principales y preferencias'
+        aria-label={t('header.ui.primaryLinks')}
         className='site-header__content flex w-full max-w-[54rem] items-center justify-between gap-5'
       >
         <h1 className='shrink-0 text-3xl font-semibold text-white transition-colors duration-200 ease-out sm:text-[2.5rem]'>

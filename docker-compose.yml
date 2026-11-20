@@ -4,7 +4,7 @@ services:
   api:
     build:
       context: ./api
-      dockerfile: Dockerfile
+      dockerfile: ../docker/api/Dockerfile
     image: portfolio-api:local
     environment:
       NODE_ENV: production
@@ -36,11 +36,9 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile
+      dockerfile: ../docker/frontend/Dockerfile
       args:
         VITE_API_URL: /api/v1
-      secrets:
-        - frontend_env
     image: portfolio-frontend:local
     expose:
       - "80"
@@ -57,7 +55,7 @@ services:
   proxy:
     build:
       context: ./proxy
-      dockerfile: Dockerfile
+      dockerfile: ../docker/proxy/Dockerfile
     image: portfolio-proxy:local
     depends_on:
       api:
@@ -80,7 +78,3 @@ networks:
   portfolio:
     name: portfolio
     driver: bridge
-
-secrets:
-  frontend_env:
-    file: ./frontend/.env

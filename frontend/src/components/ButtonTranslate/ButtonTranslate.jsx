@@ -8,7 +8,7 @@ const setCookie = (nombre, valor, dias) => {
 }
 
 export const ButtonTranslate = () => {
-  const { i18n } = useTranslation('global')
+  const { t, i18n } = useTranslation('global')
 
   const handleChangeLanguage = (language) => {
     i18n.changeLanguage(language)
@@ -19,13 +19,13 @@ export const ButtonTranslate = () => {
     <div
       className='flex items-center gap-x-2.5 text-white sm:pl-1'
       role='group'
-      aria-label='Seleccionar idioma'
+      aria-label={t('header.ui.languageSelector')}
     >
       <button
         type='button'
         onClick={() => handleChangeLanguage('es')}
         aria-pressed={i18n.language === 'es'}
-        aria-label='Español'
+        aria-label={t('header.ui.spanish')}
         className={`${i18n.language !== 'es' ? 'scale-90 opacity-70' : ''} flex h-7 w-7 cursor-pointer items-center justify-center rounded-full text-xl transition-[transform,opacity] duration-200 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-fuchsia-300`}
       >
         <span
@@ -38,7 +38,7 @@ export const ButtonTranslate = () => {
         type='button'
         onClick={() => handleChangeLanguage('en')}
         aria-pressed={i18n.language === 'en'}
-        aria-label='English'
+        aria-label={t('header.ui.english')}
         className={`${i18n.language !== 'en' ? 'scale-90 opacity-70' : ''} flex h-7 w-7 cursor-pointer items-center justify-center rounded-full text-xl transition-[transform,opacity] duration-200 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-fuchsia-300`}
       >
         <span

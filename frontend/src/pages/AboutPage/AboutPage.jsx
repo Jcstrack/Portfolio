@@ -80,7 +80,7 @@ export const AboutPage = () => {
               className='about-main-image relative flex h-[19rem] w-full flex-col justify-between overflow-hidden rounded-xl bg-[radial-gradient(circle_at_75%_15%,rgba(217,70,239,.3),transparent_38%),linear-gradient(145deg,#111827,#17132e)] p-5'
             >
               <div className='flex items-center justify-between font-[monospace] text-[9px] uppercase tracking-[.18em] text-fuchsia-200'>
-                <span>Product systems</span>
+                <span>{t('header.about.visual.label')}</span>
                 <span className='h-2 w-2 rounded-full bg-emerald-400 shadow-lg shadow-emerald-400/50' />
               </div>
               <div className='relative mx-auto flex h-28 w-28 items-center justify-center rounded-[2rem] border border-fuchsia-300/25 bg-fuchsia-400/10 text-5xl text-fuchsia-200 shadow-2xl shadow-fuchsia-950/60'>
@@ -90,13 +90,13 @@ export const AboutPage = () => {
               </div>
               <div className='grid grid-cols-3 gap-2 font-[monospace] text-[8px] uppercase tracking-wider text-slate-300'>
                 <span className='rounded-md border border-white/10 bg-white/5 py-2 text-center'>
-                  Web
+                  {t('header.about.visual.web')}
                 </span>
                 <span className='rounded-md border border-white/10 bg-white/5 py-2 text-center'>
-                  Cloud
+                  {t('header.about.visual.cloud')}
                 </span>
                 <span className='rounded-md border border-white/10 bg-white/5 py-2 text-center'>
-                  Data
+                  {t('header.about.visual.data')}
                 </span>
               </div>
             </div>

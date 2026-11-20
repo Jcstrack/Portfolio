@@ -26,7 +26,7 @@ export const ContactPage = () => {
             {t('header.contact.title')}
           </h2>
           <span className='hidden font-[monospace] text-xs uppercase tracking-widest text-slate-500 sm:block'>
-            Let&apos;s talk
+            {t('header.contact.tagline')}
           </span>
         </div>
 

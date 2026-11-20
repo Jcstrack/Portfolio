@@ -8,7 +8,7 @@ const LINKEDIN_URL =
 
 /* eslint-disable react/prop-types */
 export const DirectContact = ({
-  phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER,
+  phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '56994840087',
 }) => {
   const [t] = useTranslation('global')
   const email = t('header.contact.email')

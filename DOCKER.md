@@ -40,17 +40,29 @@ controlar exactamente qué archivos entran en runtime.
 
 ```text
 PORTFOLIO/
-├── frontend/           # frontend React
-│   ├── Dockerfile
-│   └── docker/nginx.conf
-├── api/                # API Node.js
-│   └── Dockerfile
-├── proxy/              # reverse proxy Nginx
-│   ├── Dockerfile
+├── frontend/           # frontend React y configuración de su Nginx
 │   └── nginx.conf
+├── api/                # API Node.js
+├── proxy/              # configuración del reverse proxy Nginx
+│   └── nginx.conf
+├── docker/             # infraestructura agrupada por servicio
+│   ├── api/
+│   │   ├── Dockerfile
+│   │   └── Dockerfile.dockerignore
+│   ├── frontend/
+│   │   ├── Dockerfile
+│   │   └── Dockerfile.dockerignore
+│   └── proxy/
+│       ├── Dockerfile
+│       └── Dockerfile.dockerignore
 ├── docker-compose.yml
 └── .env.example
 ```
+
+Cada servicio conserva su propio contexto de build (`api`, `frontend` o
+`proxy`). Esto evita enviar archivos ajenos al servicio y permite que la caché
+de BuildKit se reutilice aunque cambie otro componente del proyecto. Compose
+referencia los Dockerfiles centralizados mediante rutas relativas.
 
 Los servicios de Compose se llaman `frontend`, `api` y `proxy`. Al utilizar el
 nombre de proyecto `portfolio`, Docker genera nombres coherentes como

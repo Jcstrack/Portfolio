@@ -1,5 +1,14 @@
 {
   "header": {
+    "ui": {
+      "primaryLinks": "Enlaces principales y preferencias",
+      "activateLightMode": "Activar modo claro",
+      "activateDarkMode": "Activar modo oscuro",
+      "languageSelector": "Seleccionar idioma",
+      "spanish": "Español",
+      "english": "Inglés",
+      "closeDialog": "Cerrar diálogo"
+    },
     "navigation": {
       "label": "Navegación principal",
       "title": { "home": "Inicio", "about": "Sobre m\u00ed", "skills": "Habilidades", "experience": "Experiencia", "contact": "Contacto" },
@@ -8,14 +17,22 @@
     "home": {
       "presentation": "Ingeniero en Inform\u00e1tica y desarrollador web con experiencia en Frontend, WordPress y soluciones Full Stack.",
       "btnAbout": "Sobre m\u00ed",
-      "cubeAriaLabel": "Tecnolog\u00edas y \u00e1reas de trabajo"
+      "cubeAriaLabel": "Tecnolog\u00edas y \u00e1reas de trabajo",
+      "cube": {
+        "frontend": "Frontend",
+        "cmsWeb": "CMS y web",
+        "backendApis": "Backend y APIs",
+        "dataScience": "Ciencia de datos",
+        "devops": "DevOps",
+        "aiData": "IA y datos"
+      }
     },
     "about": {
       "title": "Acerca",
       "titleAccent": "de m\u00ed",
       "eyebrow": "Ingeniero en inform\u00e1tica - Full Stack",
       "intro": "Soy desarrollador web especializado en Frontend, WordPress y soluciones Full Stack. Creo productos funcionales, rápidos y centrados en el usuario.",
-      "body": "También cuento con conocimientos de DevOps y Data Science, trabajando con Docker, Kubernetes, Python, TensorFlow y Power BI.",
+      "body": "También cuento con conocimientos de DevOps y ciencia de datos, trabajando con Docker, Kubernetes, Python, TensorFlow y Power BI.",
       "location": "Pe\u00f1alol\u00e9n, Santiago",
       "availability": "Disponible para colaborar",
       "imageAlt": "Ilustraci\u00f3n sobre colaboraci\u00f3n y desarrollo de productos",
@@ -24,7 +41,13 @@
       "focus": {
         "frontend": { "title": "Full Stack", "text": "Frontend, WordPress, APIs y bases de datos." },
         "experience": { "title": "DevOps", "text": "Linux, Docker, Kubernetes, Git y despliegues." },
-        "learning": { "title": "Data Science", "text": "Python, TensorFlow, Power BI y visualización de datos." }
+        "learning": { "title": "Ciencia de datos", "text": "Python, TensorFlow, Power BI y visualización de datos." }
+      },
+      "visual": {
+        "label": "Sistemas de producto",
+        "web": "Web",
+        "cloud": "Nube",
+        "data": "Datos"
       },
       "first_p": "Mi traves\u00eda profesional est\u00e1 impulsada por la curiosidad, la adquisici\u00f3n constante de conocimientos y el deseo de dominar nuevas tecnolog\u00edas.",
       "second_p": "Cada proyecto es una oportunidad para conectar una experiencia clara con una soluci\u00f3n mantenible, medible y \u00fatil para las personas que la utilizan."
@@ -37,22 +60,22 @@
       "next": "Siguiente habilidad",
       "all": "Todas",
       "filterLabel": "Filtrar habilidades por área",
-      "collectionLabel": "Skill inventory",
+      "collectionLabel": "Inventario de habilidades",
       "collectionTitle": "Tecnologías que utilizo",
-      "skillsCount": "skills",
+      "skillsCount": "habilidades",
       "coreLabel": "Mostrando habilidades",
       "loading": "Cargando habilidades...",
       "loadError": "No fue posible cargar las habilidades desde la API.",
       "retry": "Reintentar",
       "empty": "No hay habilidades para este filtro.",
-      "categories": { "frontend": "Frontend", "cms": "WordPress & CMS", "backend": "Backend & APIs", "cloud": "Cloud & DevOps", "data": "Datos & IA", "tools": "Herramientas", "workflow": "Productividad" },
+      "categories": { "frontend": "Frontend", "cms": "WordPress y CMS", "backend": "Backend y APIs", "cloud": "Cloud y DevOps", "data": "Datos e IA", "tools": "Herramientas", "workflow": "Productividad" },
       "level_skill": { "bs": "B\u00e1sico", "in": "Intermedio", "av": "Avanzado" }
     },
     "experience": {
       "title": "Experiencia",
       "tagline": "Proyectos y trayectoria",
       "intro": "Una selecci\u00f3n de proyectos profesionales, freelance y acad\u00e9micos donde he conectado producto, tecnolog\u00eda y necesidades reales.",
-      "skillsTitle": "Skills utilizadas",
+      "skillsTitle": "Habilidades utilizadas",
       "clinic": { "title": "Cl\u00ednica Cham\u00e1n - Sitio corporativo", "shortTitle": "Cl\u00ednica Cham\u00e1n", "date": "Febrero / Abril (2026)", "visual": "WORDPRESS - PHP", "skills": ["WordPress", "PHP", "JavaScript", "Dise\u00f1o responsive"], "description": "Dise\u00f1\u00e9 y desarroll\u00e9 el sitio institucional en WordPress con foco en conversi\u00f3n, experiencia de usuario y administraci\u00f3n simple. Tambi\u00e9n implement\u00e9 un plugin personalizado en PHP para pre-reservas por bloques, con panel de administraci\u00f3n, cupos, estados, notificaciones por correo y carga de comprobantes." },
       "kunic": { "title": "KunicProduccionesSpa - E-commerce", "shortTitle": "KunicProduccionesSpa", "date": "Abril / Julio (2025)", "visual": "WOOCOMMERCE - SEO", "skills": ["WordPress", "Elementor", "WooCommerce", "SEO on-page", "LiteSpeed Cache", "FiboSearch"], "description": "Desarroll\u00e9 una plataforma web con WordPress, Elementor y WooCommerce. Integr\u00e9 ShopLentor, FiboSearch, LiteSpeed Cache e Image Optimizer para mejorar b\u00fasqueda, rendimiento, navegaci\u00f3n, SEO y conversi\u00f3n." },
       "fitness": { "title": "Tu Evoluci\u00f3n Fitness - SPA", "shortTitle": "Tu Evoluci\u00f3n Fitness", "date": "Febrero / Marzo (2024)", "visual": "REACT - TAILWIND", "skills": ["React.js", "JavaScript", "Tailwind CSS", "Dise\u00f1o responsive"], "description": "Desarroll\u00e9 una Single Page Application para presentar los servicios de un gimnasio y fortalecer su presencia digital. La soluci\u00f3n fue construida con React.js y Tailwind CSS, priorizando responsive design, rapidez de carga y claridad para el usuario." },
@@ -62,6 +85,7 @@
     },
     "contact": {
       "title": "Contacto",
+      "tagline": "Conversemos",
       "kicker": "Hablemos de tu proyecto",
       "intro": "Cuéntame qué necesitas construir, mejorar o resolver. Te responderé con una propuesta clara.",
       "email": "juanculloacampos@gmail.com",

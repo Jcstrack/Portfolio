@@ -69,7 +69,7 @@ export const CardModal = ({
             type='button'
             className='absolute right-3 top-3 z-[2] flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-slate-950/60 text-2xl text-slate-100 transition hover:border-fuchsia-300/60 hover:bg-fuchsia-500/20 hover:text-white'
             onClick={onclick}
-            aria-label='Cerrar diálogo'
+            aria-label={t('header.ui.closeDialog')}
           >
             <IoIosClose />
           </button>

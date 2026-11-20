@@ -10,12 +10,12 @@ import {
 import style from './style.module.css'
 
 const faces = [
-  { side: 'front', Icon: SiReact, title: 'React.js', subtitle: 'Frontend' },
-  { side: 'right', Icon: SiWordpress, title: 'WordPress', subtitle: 'CMS & Web' },
-  { side: 'back', Icon: SiNodedotjs, title: 'Node.js', subtitle: 'Backend & APIs' },
-  { side: 'left', Icon: SiPython, title: 'Python', subtitle: 'Data Science' },
-  { side: 'top', Icon: SiDocker, title: 'Docker', subtitle: 'DevOps' },
-  { side: 'bottom', Icon: SiTensorflow, title: 'TensorFlow', subtitle: 'AI & Data' },
+  { side: 'front', Icon: SiReact, title: 'React.js', subtitleKey: 'frontend' },
+  { side: 'right', Icon: SiWordpress, title: 'WordPress', subtitleKey: 'cmsWeb' },
+  { side: 'back', Icon: SiNodedotjs, title: 'Node.js', subtitleKey: 'backendApis' },
+  { side: 'left', Icon: SiPython, title: 'Python', subtitleKey: 'dataScience' },
+  { side: 'top', Icon: SiDocker, title: 'Docker', subtitleKey: 'devops' },
+  { side: 'bottom', Icon: SiTensorflow, title: 'TensorFlow', subtitleKey: 'aiData' },
 ]
 
 export const Cube = () => {
@@ -24,11 +24,11 @@ export const Cube = () => {
   return (
     <section className={style.container} aria-label={t('header.home.cubeAriaLabel')}>
       <div className={style.cube}>
-        {faces.map(({ side, Icon, title, subtitle }) => (
+        {faces.map(({ side, Icon, title, subtitleKey }) => (
           <div className={`${style.face} ${style[side]}`} key={side}>
             <Icon className={style.icon} aria-hidden='true' />
             <strong>{title}</strong>
-            <span>{subtitle}</span>
+            <span>{t(`header.home.cube.${subtitleKey}`)}</span>
           </div>
         ))}
         <span className={style.shadowBottom} aria-hidden='true' />

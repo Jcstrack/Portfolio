@@ -4,7 +4,7 @@ import { createWhatsAppUrl } from './whatsappUrl'
 
 /* eslint-disable react/prop-types */
 export const WhatsAppButton = ({
-  phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER,
+  phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '56994840087',
   message,
 }) => {
   const [t] = useTranslation('global')
