@@ -50,7 +50,7 @@ export const CardModal = ({
   return createPortal(
     (
     <div
-      className='fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-slate-950/75 p-4 backdrop-blur-sm animate-opacityModal sm:p-6'
+      className='modal-backdrop fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-slate-950/90 p-4 sm:p-6'
       role='dialog'
       aria-modal='true'
       aria-labelledby={titleId}
@@ -61,7 +61,7 @@ export const CardModal = ({
       <div
         ref={dialogRef}
         tabIndex={-1}
-        className='experience-dialog relative flex w-full max-w-[38.5rem] flex-col overflow-hidden rounded-2xl border border-fuchsia-300/25 bg-[#10131f] shadow-2xl shadow-black/60 outline-none animate-scaleOpen'
+        className='modal-surface experience-dialog relative flex w-full max-w-[38.5rem] flex-col overflow-hidden rounded-2xl border border-fuchsia-300/25 bg-[#10131f] shadow-2xl shadow-black/60 outline-none'
         onMouseDown={(event) => event.stopPropagation()}
       >
         <div className='relative h-60 shrink-0 overflow-hidden sm:h-72'>

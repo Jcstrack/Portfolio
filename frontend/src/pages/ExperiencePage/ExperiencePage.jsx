@@ -5,14 +5,14 @@ export const ExperiencePage = () => {
   const [t] = useTranslation('global')
 
   return (
-    <section className='portfolio-page relative z-0 w-full max-w-[52rem] shrink-0 overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/50 shadow-2xl shadow-purple-950/20 backdrop-blur-md dark:border-pink-100/10'>
+    <section className='portfolio-page relative z-0 w-full max-w-[52rem] shrink-0 overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/85 shadow-2xl shadow-purple-950/20 dark:border-pink-100/10'>
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full bg-fuchsia-600/20 blur-3xl'
+        className='ambient-orb ambient-orb--fuchsia pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full'
       />
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute -bottom-40 -left-24 h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl'
+        className='ambient-orb ambient-orb--indigo pointer-events-none absolute -bottom-40 -left-24 h-96 w-96 rounded-full'
       />
 
       <div className='portfolio-page-content relative z-[1] p-6 sm:p-8 lg:p-12'>

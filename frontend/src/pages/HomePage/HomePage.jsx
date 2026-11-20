@@ -22,7 +22,7 @@ export const HomePage = () => {
           <div className='flex w-full items-center justify-center lg:justify-start  lg:pt-2'>
             <Link
               to={'/about-me'}
-              className='my-2 max-w-max rounded-full bg-purple-700 px-3 py-2 font-semibold text-purple-100 transition-colors duration-700 ease-in-out   hover:bg-purple-800 dark:bg-purple-800 dark:hover:bg-purple-700 max-lg:translate-y-2'
+              className='my-2 max-w-max rounded-full bg-purple-700 px-3 py-2 font-semibold text-purple-100 transition-colors duration-200 ease-out hover:bg-purple-800 dark:bg-purple-800 dark:hover:bg-purple-700 max-lg:translate-y-2'
             >
               {t('header.home.btnAbout')}
             </Link>

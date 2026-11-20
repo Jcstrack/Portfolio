@@ -15,7 +15,7 @@ export const CardLine = ({ urlImg, altImg, title, visual, onclick }) => {
   return (
     <button
       type='button'
-      className='group relative h-32 w-full max-w-[18rem] cursor-pointer overflow-hidden rounded-xl border border-fuchsia-400/50 bg-slate-900/80 text-left shadow-lg shadow-purple-950/20 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-fuchsia-300 hover:shadow-fuchsia-950/40 active:scale-[.98] sm:h-36'
+      className='group relative h-32 w-full max-w-[18rem] cursor-pointer overflow-hidden rounded-xl border border-fuchsia-400/50 bg-slate-900/80 text-left shadow-lg shadow-purple-950/20 transition-[transform,border-color,box-shadow] duration-200 ease-out hover:-translate-y-1 hover:border-fuchsia-300 hover:shadow-fuchsia-950/40 active:scale-[.98] sm:h-36'
       onClick={onclick}
       onKeyDown={handleKeyDown}
       aria-label={`${title}. ${visual}`}
@@ -25,7 +25,7 @@ export const CardLine = ({ urlImg, altImg, title, visual, onclick }) => {
           src={urlImg}
           loading='lazy'
           decoding='async'
-          className='absolute inset-0 h-full w-full object-cover opacity-65 transition duration-500 group-hover:scale-105 group-hover:opacity-80'
+          className='absolute inset-0 h-full w-full object-cover opacity-65 transition-[transform,opacity] duration-300 group-hover:scale-105 group-hover:opacity-80'
           alt={altImg || title}
           onError={() => setImageFailed(true)}
         />

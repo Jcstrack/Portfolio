@@ -45,7 +45,7 @@ export const Slider = () => {
   )
 
   return (
-    <div className='relative z-[1] animate-fadeInBT'>
+    <div className='relative z-[1]'>
       <div className='flex flex-col gap-4 border-b border-white/10 pb-5 sm:flex-row sm:items-end sm:justify-between dark:border-pink-100/10'>
         <div>
           <p className='font-[monospace] text-[10px] uppercase tracking-[.22em] text-fuchsia-300'>
@@ -80,7 +80,7 @@ export const Slider = () => {
               key={category}
               onClick={() => setActiveCategory(category)}
               disabled={isLoading || Boolean(error)}
-              className={`rounded-full border px-3 py-2 font-[monospace] text-[10px] uppercase tracking-wider transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 ${isActive ? 'border-fuchsia-300 bg-fuchsia-400/15 text-fuchsia-100 shadow-lg shadow-fuchsia-950/20' : 'border-white/10 bg-white/[.03] text-slate-400 hover:border-fuchsia-300/40 hover:text-fuchsia-100'}`}
+              className={`rounded-full border px-3 py-2 font-[monospace] text-[10px] uppercase tracking-wider transition-[border-color,background-color,color,box-shadow] duration-200 disabled:cursor-not-allowed disabled:opacity-50 ${isActive ? 'border-fuchsia-300 bg-fuchsia-400/15 text-fuchsia-100 shadow-lg shadow-fuchsia-950/20' : 'border-white/10 bg-white/[.03] text-slate-400 hover:border-fuchsia-300/40 hover:text-fuchsia-100'}`}
             >
               {label}
             </button>

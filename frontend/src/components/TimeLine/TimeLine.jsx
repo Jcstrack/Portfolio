@@ -24,14 +24,14 @@ export const TimeLine = () => {
             >
               <span
                 className={`timeline-branch absolute top-1/2 h-px bg-fuchsia-400/70 ${isLeft ? 'timeline-branch-left' : 'timeline-branch-right'}`}
-                style={{ animationDelay: `${0.35 + index * 0.18}s` }}
+                style={{ animationDelay: `${0.12 + index * 0.08}s` }}
                 aria-hidden='true'
               />
               <span className='timeline-node absolute left-1/2 top-1/2 z-[1] h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-fuchsia-200 bg-purple-700 shadow-lg shadow-fuchsia-500/40' />
 
               <div
                 className={`timeline-card ${isLeft ? 'timeline-card-left col-start-1 justify-self-start text-left' : 'timeline-card-right col-start-2 justify-self-end text-right'} max-sm:col-auto max-sm:pl-10 max-sm:text-left`}
-                style={{ animationDelay: `${0.55 + index * 0.18}s` }}
+                style={{ animationDelay: `${0.2 + index * 0.08}s` }}
               >
                 <p className='mb-2 font-[monospace] text-[10px] uppercase tracking-[.12em] text-fuchsia-200/80 sm:text-xs'>
                   {item.date}

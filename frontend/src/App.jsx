@@ -1,35 +1,21 @@
-import './App.css'
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { ContainerPage } from './components/ContainerPage/ContainerPage'
 import { Navigation } from './components/Navigation/Navigation'
 import { HeaderPage } from './components/HeaderPage/HeaderPage'
+import { WhatsAppButton } from './components/WhatsAppButton/WhatsAppButton'
+import { routeLoaders } from './routeLoaders'
 
-const HomePage = lazy(() =>
-  import('./pages/HomePage/HomePage').then(({ HomePage: page }) => ({
-    default: page,
-  }))
-)
-const AboutPage = lazy(() =>
-  import('./pages/AboutPage/AboutPage').then(({ AboutPage: page }) => ({
-    default: page,
-  }))
-)
-const SkillsPage = lazy(() =>
-  import('./pages/SkillsPage/SkillsPage').then(({ SkillsPage: page }) => ({
-    default: page,
-  }))
-)
-const ExperiencePage = lazy(() =>
-  import('./pages/ExperiencePage/ExperiencePage').then(
-    ({ ExperiencePage: page }) => ({ default: page })
+const lazyPage = (path, exportName) =>
+  lazy(() =>
+    routeLoaders[path]().then((module) => ({ default: module[exportName] }))
   )
-)
-const ContactPage = lazy(() =>
-  import('./pages/ContactPage/ContactPage').then(({ ContactPage: page }) => ({
-    default: page,
-  }))
-)
+
+const HomePage = lazyPage('/home', 'HomePage')
+const AboutPage = lazyPage('/about-me', 'AboutPage')
+const SkillsPage = lazyPage('/skills', 'SkillsPage')
+const ExperiencePage = lazyPage('/experience', 'ExperiencePage')
+const ContactPage = lazyPage('/contact', 'ContactPage')
 
 const PageFallback = () => (
   <div
@@ -48,6 +34,7 @@ function App() {
       <ContainerPage>
         <HeaderPage />
         <Navigation />
+        <WhatsAppButton />
         <Suspense fallback={<PageFallback />}>
           <Routes>
             <Route path='/' element={<Navigate to='/home' replace />} />
